@@ -1,0 +1,34 @@
+urok 2
+zadanie Shokoladka
+kod:
+n=  int(input())
+m=  int(input())
+k=  int(input())
+if k > n * m  :
+    print('NO')
+else:
+    if  k % n != 0 and k % m !=0:
+        print ("NO")
+    else:
+        print("YES")
+http://pythontutor.ru/lessons/ifelse/problems/chocolate/
+
+urok 1
+zadanie Parti
+kod:
+x = int(input())
+y = int(input())
+z = int(input())
+print ((x+1) //2 + (y+1) //2 + (z+1) //2 )
+
+http://pythontutor.ru/lessons/inout_and_arithmetic_operations/problems/desks/
+
+urok 1
+zadanie Chasi
+kod:
+n = int (input())
+k = n // 60
+l = n - 60*k
+k= k % 24
+print(k,l)
+http://pythontutor.ru/lessons/inout_and_arithmetic_operations/problems/electronic_watch/
