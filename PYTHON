@@ -1,0 +1,74 @@
+urok 3 last zadacha
+
+p = float(input())
+x = float(input())*100
+y = float(input()) + x
+print(int(y + y*p/100)//100 , int(y + y*p/100) - int(y + y*p/100)//100*100)
+
+urok 4 zadacha 'lesenka'
+
+n=int(input ())
+for i in range (1 ,  n + 1):
+    for j in range(1 , i+1):
+        print(j, end='' )
+    print()
+    
+urok 4 zadacha 'kartochka'
+
+n = int(input())
+s = 0
+for i in range (1, n + 1):
+    s = s + i
+for i in range (1, n):
+    s=s-int(input())
+print(s)
+
+urok 5 zadacha «Замена внутри фрагмента»
+
+s= input()
+a= s[:s.find('h') + 1]
+b=s[s.rfind('h'):]
+s=s[s.find('h')+1:s.rfind('h')].replace('h','H')
+print(a + s + b)
+
+urok 5 Задача «Удалить каждый третий символ»
+
+s = input()
+for i in range(1,len(s)+2):
+    if i%3 == 0:
+        print(s[i-2:i],sep=(''),end=(''))
+
+urok 6 last zadacha 
+
+from math import *
+i = 0
+x = 0
+x2 = 0
+n = 0
+while i >= 0:
+    a = int(input())
+    if(a == 0):
+        break
+    x += a
+    x2 += a**2
+    n += 1
+print(sqrt((x2 - 2*x*x/n + x**2/n)/(n-1)))
+
+urok 6  «Максимальное число идущих подряд равных элементов»
+
+i = 0
+s = 1
+k = 1
+while i >= 0:
+    a = int(input())
+    if a == 0 :
+        break
+    if a == i :
+        s += 1
+        if s > k :
+            k = s
+    else:
+        s = 1
+    i = a
+print(k)
+
