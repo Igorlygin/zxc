@@ -1,0 +1,52 @@
+ZADANIE 1 SHNURKI
+
+a=int(input())
+b=int(input())
+l=int(input())
+N=int(input())
+print(a+(N-1)*2*b+2*l+2*a*(N-1))
+
+ZADANIE 2 SDANO 
+
+ZADANIE 3 CLOCK
+from math import *
+a = float(input())
+b = a*12/360*3600
+print(b//3600)
+print((b - b//3600*3600)//60)
+print(floor((b - b//3600*3600) - (b - b//3600*3600)//60*60))
+
+ZADANIYA 4-6 SDANI
+ZADANIE 7 FERZI
+a = [0]*8
+b = [0]*8
+k = 0
+for i in range(8):
+    a[i],b[i] = [int(s) for s in input().split()]
+for i in range(8):
+    for j in range(i+1,8):
+        if (a[i] == a[j]) or (b[i] == b[j]) or (abs(b[j]-b[i]) == abs(a[j]-a[i])):
+            k = 1
+if k == 1:
+    print('YES')
+else:
+    print('NO')
+    
+ZADANIE 8 FIBONACHI
+def fibo(a,b,n):
+    if n == 0:
+        return max(a,b)
+    if  n % 2 == 0:
+        a = a + b
+        return fibo(a,b,n-1)
+    elif  n % 2 != 0 :
+        b = a + b
+        return fibo(a,b,n-1)
+a = 0
+b = 1
+n = int(input())
+if n % 2 == 0:
+    print(fibo(b,a,n))
+else:
+    print(fibo(a,b,n))
+
